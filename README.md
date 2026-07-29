@@ -112,10 +112,11 @@ Important configuration is stored in config.py:
 The repository includes a notebook for loading and cleaning Arabic QA datasets:
 
 - MRC dataset (`MRC Dataset/train.json`, `MRC Dataset/val.json`, `MRC Dataset/test.json`)
-- hsseinmz/arcd dataset (`arcd.csv` / parquet source)
-- ArQuAD dataset (`ArQuAD/ArQuAD-train.csv`, `ArQuAD/ArQuAD-test.csv`, `ArQuAD/ArQuAD-dev.csv`)
+- ARCD (Arabic Reading Comprehension Dataset) — [hsseinmz/arcd](https://huggingface.co/datasets/hsseinmz/arcd) (`arcd.csv` / parquet source)
+- ArQuAD — [RashaMObeidat/ArQuAD](https://github.com/RashaMObeidat/ArQuAD?utm_source=chatgpt.com) (`ArQuAD/ArQuAD-train.csv`, `ArQuAD/ArQuAD-test.csv`, `ArQuAD/ArQuAD-dev.csv`)
+- ArabicaQA — [abdoelsayed/ArabicaQA](https://huggingface.co/datasets/abdoelsayed/ArabicaQA/tree/main/MRC?utm_source=chatgpt.com)
 
-Expected dataset format for pipeline scripts is a `jsonl` or DataFrame with at least:
+The expected dataset format for pipeline scripts is a `jsonl` or DataFrame with at least:
 
 - `question`
 - `context`
