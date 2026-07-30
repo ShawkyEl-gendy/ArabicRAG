@@ -6,7 +6,6 @@ from sentence_transformers import SentenceTransformer
 from dense_retrieval import load_embedding_model,index_chunks, create_embeddings
 from prepare_data import load_dataset
 from chunking import create_chunk_dataframe
-from metadata import load_ner_model, generate_metadata, merge_metadata_with_chunk
 from dense_retrieval import load_chroma_client, create_collection
 from sparse_retrieval import build_sparse_index, sparse_similarity
 from config import (
