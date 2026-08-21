@@ -111,9 +111,8 @@ Important configuration is stored in config.py:
 
 The repository includes a notebook for loading and cleaning Arabic QA datasets:
 
-- ARCD (Arabic Reading Comprehension Dataset) — [hsseinmz/arcd](https://huggingface.co/datasets/hsseinmz/arcd) 
-- ArQuAD — [RashaMObeidat/ArQuAD](https://github.com/DataScienceUIBK/ArabicaQA) 
-- MRC — [abdoelsayed/ArabicaQA](https://huggingface.co/datasets/abdoelsayed/ArabicaQA/tree/main/MRC)
+- ARCD (Arabic Reading Comprehension Dataset) — [hsseinmz/arcd](https://huggingface.co/datasets/hsseinmz/arcd)  
+- MRC — [abdoelsayed/ArabicaQA](https://github.com/DataScienceUIBK/ArabicaQA)
 
 The expected dataset format for pipeline scripts is a `jsonl` or DataFrame with at least:
 
@@ -130,7 +129,6 @@ The loading-datasets.ipynb notebook shows how to standardize raw datasets into t
 
 - `mrc-processed.jsonl`
 - `arcd-processed.jsonl`
-- `ArQuAD-processed.jsonl`
 
 ## Project Workflow
 
@@ -232,9 +230,9 @@ The script builds ground truth relevance labels using a hybrid strategy that com
 
 Generated outputs include:
 
-- Indexed ChromaDB collection at `./db/MRC`
+- Indexed ChromaDB collection at `./db/`
 - Processed dataset files in JSONL format
-- CSV results from generation scripts under `results/MRC/enhanced_rag/`
+- CSV results from generation scripts under `results/`
 - Evaluation metrics printed to console
 
 ## Requirements
