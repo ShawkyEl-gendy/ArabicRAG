@@ -1,6 +1,6 @@
 # ArabicRAG
 
-![Arabic RAG Architecture](./our%20rag.drawio.png)
+![Arabic RAG Architecture](./our%20rag.png)
 
 ArabicRAG is an Arabic Retrieval-Augmented Generation (RAG) project designed to build and evaluate an Arabic QA pipeline using hybrid dense and sparse retrieval, reranking, NER, context construction, and LLM generation.
 
