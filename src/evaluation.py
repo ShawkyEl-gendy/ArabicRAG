@@ -637,7 +637,7 @@ def normalize_scores(results):
 def build_weighted_hybrid_retriever(
     dense_retrieve,
     sparse_retrieve,
-    alpha=0.5,
+    alpha=0.3,
     retrieve_k=50,
 ):
     """
@@ -1130,7 +1130,7 @@ if __name__ == "__main__":
     weighted_retrieve = build_weighted_hybrid_retriever(
         dense_retrieve=dense,
         sparse_retrieve=sparse,
-        alpha=0.5,
+        alpha=0.3,
         retrieve_k=50,
     )
 
