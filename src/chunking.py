@@ -143,11 +143,13 @@ MODEL = SentenceTransformer(
 
 
 
+
+
 def semantic_chunking(
     text,
-    similarity_threshold=0.65,
-    chunk_size=500,
-    min_chunk_size=75,
+    similarity_threshold=0.8,
+    max_chunk_size=MAX_CHUNK_SIZE,
+    min_chunk_size=MIN_CHUNK_SIZE,
 ):
     """
     Split text into semantically coherent chunks while ensuring that
@@ -198,7 +200,7 @@ def semantic_chunking(
 
         should_split = (
             (similarity < similarity_threshold and current_length >= min_chunk_size)
-            or current_length >= chunk_size
+            or current_length >= max_chunk_size
         )
 
         if should_split:
@@ -233,7 +235,6 @@ def semantic_chunking(
             merged_chunks.append(chunk)
 
     return merged_chunks
-
 
 
 
