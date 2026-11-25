@@ -200,21 +200,6 @@ python naive_reag.py
 python enhanced_rag.py
 ```
 
-## Configuration Parameters
-
-Key configurable variables:
-
-- `CHUNK_STRATEGY`: `fixed`, `recursive`, `semantic`
-- `CHUNK_SIZE`: chunk maximum size
-- `CHUNK_OVERLAP`: overlap between chunks
-- `MIN_CHUNK_SIZE`: minimum chunk length
-- `SIMILARITY_THRESHOLD`: similarity cutoff
-- `EMBEDDING_MODEL`: dense encoder model
-- `DB_PATH`: path for Chroma persistence
-- `COLLECTION_NAME`: Chroma collection name
-- `USE_NER`: whether to include NER metadata in text
-- `MODEL_NAME`: Ollama model for generation
-
 ## Evaluation
 
 Evaluation is handled by evaluation.py using `ranx` metrics:
