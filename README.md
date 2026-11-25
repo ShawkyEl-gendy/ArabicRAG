@@ -97,15 +97,15 @@ Important configuration is stored in config.py:
 
 - `DATASET_PATH` — path to the dataset JSONL file
 - `CHUNK_STRATEGY` — chunking strategy
-- `CHUNK_SIZE` — maximum chunk length
+- `CHUNK_SIZE` — a chunk length
 - `CHUNK_OVERLAP` — overlap between chunks
 - `MIN_CHUNK_SIZE` — minimum chunk length
+- `MAX_CHUNK_SIZE` — maximum chunk length
 - `SIMILARITY_THRESHOLD` — threshold for semantic chunking and ground truth selection
 - `EMBEDDING_MODEL` — dense embedding model
 - `DB_PATH` — Chroma DB persistence path
 - `COLLECTION_NAME` — Chroma collection name
 - `USE_NER` — whether to merge NER metadata into chunk text
-- `MODEL_NAME` — default generation model
 
 ## Datasets
 
